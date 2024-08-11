@@ -30,3 +30,5 @@ function spinWords(string) {
   }
   return result.join(" ");
 }
+
+console.log(spinWords("Hey fellow warriors!"));
