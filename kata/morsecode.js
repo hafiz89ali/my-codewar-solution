@@ -40,3 +40,17 @@ const MORSE_CODE = {
 const REVERSED_MORSE_CODE = Object.fromEntries(
   Object.entries(MORSE_CODE).map(([letter, code]) => [code, letter])
 );
+
+function decodeMorse(morseMessage) {
+  return morseMessage
+    .split(" ")
+    .map((word) =>
+      word
+        .split(" ")
+        .map((letter) => REVERSED_MORSE_CODE[letter] || "")
+        .join("")
+    )
+    .join(" ");
+}
+
+console.log(decodeMorse(".-- --- .-. -.."));
