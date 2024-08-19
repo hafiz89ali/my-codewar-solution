@@ -43,7 +43,7 @@ const REVERSED_MORSE_CODE = Object.fromEntries(
 
 function decodeMorse(morseMessage) {
   return morseMessage
-    .split(" ")
+    .split("   ")
     .map((word) =>
       word
         .split(" ")
