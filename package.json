@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "node --watch kata/morsecode.js"
+    "dev": "node --watch index.js"
   },
   "author": "",
   "license": "ISC"
