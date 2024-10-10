@@ -1,7 +1,7 @@
-import spinWords from "./kata/Stop-gninnipS-My-sdroW!.js";
+import decodeMorse from "./kata/morsecode.js";
 
-const input = "Hey fellow warriors";
+const input = ".... . -.--   .--- ..- -.. .";
 
-const output = spinWords(input);
+const output = decodeMorse(input);
 
 console.log(output);
