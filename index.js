@@ -1,7 +1,7 @@
-import toJadenCase from "./kata/JadenCasingString.js";
+import isPangram from "./kata/DetectPangram.js";
 
-const input = "How can mirrors be real if our eyes aren't real";
+const input = "The quick brown fox jumps over the lazy dog.";
 
-const output = toJadenCase(input);
+const output = isPangram(input);
 
 console.log(output);
